@@ -1,7 +1,37 @@
 * {
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .game-board{
-    
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cano{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    animation: cano-animation 2s infinite linear;
+}
+
+.mario{
+    width: 130px;
+    bottom: 0;
+    position: absolute;
+}
+
+@keyframes cano-animation {
+    from {
+        right: -100px;
+    }
+
+    to{
+        right: 100%;
+    }
 }
