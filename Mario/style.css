@@ -5,19 +5,20 @@
 }
 
 .game-board{
-    width: 80%;
+    width: 100%;
     height: 500px;
-    border: 1px solid #333;
+    border-bottom: 15px solid rgb(35, 160, 35);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 .cano{
     position: absolute;
     bottom: 0;
-    width: 100px;
-    animation: cano-animation 2s infinite linear;
+    width: 90px;
+    animation: cano-animation 1.5s infinite linear;
 }
 
 .mario{
@@ -30,9 +31,16 @@
     animation: jump 600ms ease-out;
 }
 
+.nuvem{
+    width: 650px;
+    height: 200px;
+    position: absolute;
+    animation: nuvem-animation 15s infinite linear;
+}
+
 @keyframes cano-animation {
     from {
-        right: -100px;
+        right: -80px;
     }
 
     to{
@@ -45,24 +53,31 @@
         bottom: 0;
     }
 
+  
     40% {
-        bottom: 155px;
+        bottom: 145px;
     }
 
 
     50% {
-        bottom: 155px;
+        bottom: 145px;
     }
 
     60%{
-        bottom: 155px;
-    }
-
-    65%{
-        bottom: 155px;
+        bottom: 145px;
     }
 
     100% {
         bottom: 0;
+    }
+}
+
+@keyframes nuvem-animation {
+    from{
+        right: -650px; 
+    }
+
+    to {
+        right: 100%;
     }
 }
