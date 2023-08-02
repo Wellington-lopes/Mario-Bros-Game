@@ -1,5 +1,11 @@
 const mario = document.querySelector('.mario');
 const cano = document.querySelector('.cano');
+let contadorDePulos = 0 
+
+
+function atualizarContador() {
+    document.getElementById("contadorPulos").textContent = contadorDePulos;
+  }
 
 const jump = () => {
     mario.classList.add('jump');
@@ -7,6 +13,9 @@ const jump = () => {
     setTimeout(() => {
 
     mario.classList.remove('jump');
+
+    contadorDePulos++
+    atualizarContador()
 
     },500);
 }
@@ -27,9 +36,13 @@ const loop = setInterval(() => {
         mario.src = './gif mario/morte.webp'
 
         clearInterval(loop);
-    }
-    
 
+        document.getElementById("botaoReiniciar").style.display = "block";
+    }     
 }, 10)
+
+function reiniciarJogo() {
+    window.location.reload();
+}
 
 document.addEventListener('keydown', jump);
