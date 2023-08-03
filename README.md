@@ -1,5 +1,5 @@
 # Mario Bros Game
- Este jogo foi criado apenas parar testar e estudar Javascript, HTML e CSS. 
+ Este jogo foi criado para estudar Javascript, HTML e CSS. Jogo clone do Dinossauro Offline.
 
  Jogando (Pule os canos para ganhar pontos):
 ![image](https://github.com/Wellington-lopes/Mario-Bros-Game/assets/67521652/9b569a73-72fb-491f-bbdf-8520e188f335)
